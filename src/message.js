@@ -55,10 +55,10 @@ async function GroupParticipantsUpdate(sych, { id, participants, author, action 
 				}
 				let messageText;
 				if (action === 'add') {
-					messageText = `Welcome to ${metadata.subject}\n@${n.split('@')[0]}`;
+					messageText = `Selamat datang di ${metadata.subject}\n@${n.split('@')[0]}`;
 					metadata.participants.push({ id: jidNormalizedUser(n), admin: null });
 				} else if (action === 'remove') {
-					messageText = `@${n.split('@')[0]}\nLeaving From ${metadata.subject}`;
+					messageText = `@${n.split('@')[0]}\nKeluar dari ${metadata.subject}`;
 					metadata.participants = metadata.participants.filter(p => !participants.includes(jidNormalizedUser(p.id)));
 				} else if (action === 'promote') {
 					messageText = `@${n.split('@')[0]}\nPromote From ${metadata.subject}\nBy @${author.split('@')[0]}`;
@@ -106,12 +106,12 @@ async function LoadDataBase(sych, m) {
 			if (!('uang' in setBot)) setBot.uang = 0
 			if (!('status' in setBot)) setBot.status = 0
 			if (!('join' in setBot)) setBot.join = false
-			if (!('public' in setBot)) setBot.public = true
-			if (!('anticall' in setBot)) setBot.anticall = true
+			if (!('public' in setBot)) setBot.public = false
+			if (!('anticall' in setBot)) setBot.anticall = false
 			if (!('readsw' in setBot)) setBot.readsw = false
 			if (!('autobio' in setBot)) setBot.autobio = false
-			if (!('autoread' in setBot)) setBot.autoread = true
-			if (!('autotyping' in setBot)) setBot.autotyping = true
+			if (!('autoread' in setBot)) setBot.autoread = false
+			if (!('autotyping' in setBot)) setBot.autotyping = false
 			if (!('template' in setBot)) setBot.template = 'textMessage'
 		} else {
 			global.db.set[botNumber] = {
@@ -159,10 +159,10 @@ async function LoadDataBase(sych, m) {
 			if (group) {
 				if (!('nsfw' in group)) group.nsfw = false
 				if (!('mute' in group)) group.mute = false
-				if (!('setinfo' in group)) group.setinfo = true
+				if (!('setinfo' in group)) group.setinfo = false
 				if (!('antilink' in group)) group.antilink = false
 				if (!('antitoxic' in group)) group.antitoxic = false
-				if (!('welcome' in group)) group.welcome = true
+				if (!('welcome' in group)) group.welcome = false
 				if (!('antivirtex' in group)) group.antivirtex = false
 				if (!('antidelete' in group)) group.antidelete = false
 				if (!('waktusholat' in group)) group.waktusholat = false
@@ -170,10 +170,10 @@ async function LoadDataBase(sych, m) {
 				global.db.groups[m.chat] = {
 					nsfw: false,
 					mute: false,
-					setinfo: true,
+					setinfo: false,
 					antilink: false,
 					antitoxic: false,
-					welcome: true,
+					welcome: false,
 					antivirtex: false,
 					antidelete: false,
 					waktusholat: false,
