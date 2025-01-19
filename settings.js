@@ -7,13 +7,13 @@ const chalk = require('chalk');
  */
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 //settings owner di ./setown.js
-global.packname = 'SychBotz'
-global.owner = ["62882008702155"]
-global.botnum = ["6287862997267"]
+global.packname = 'Gygyh-WAbot'
+global.owner = ["6287883375507"]
+global.botnum = ["6287883375507"]
 global.author = 'ydaa'
-global.owname = 'mzyda'
-global.botname = 'SYCHY BOTz'
-global.themeemoji = '🪀'
+global.owname = 'gifzi'
+global.botname = 'Gygyh BOTz'
+global.themeemoji = '⚡'
 global.f = '> '
 global.n = '`'
 global.videoMenu = fs.readFileSync('./sychMedia/menu/sych.mp4');
@@ -31,9 +31,9 @@ global.fake = {
 	listfakedocs: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/pdf'],
 }
 global.my = {
-	yt: 'https://www.youtube.com/@sychyy00',
-	gh: 'https://github.com/sychyy',
-	gc: 'https://chat.whatsapp.com/GQ5Gp0eSeDS6dPBYeHE6kf',
+	yt: 'https://www.youtube.com/@youtube',
+	gh: 'https://wa.me/6287883375507',
+	gc: 'https://wa.me/6287883375507',
 	ch: '120363383347233294@newsletter',
 }
 global.limit = {
@@ -48,15 +48,15 @@ global.uang = {
 }
 global.mess = {
 	key0: 'Apikey mu telah habis silahkan kunjungi\nhttps://my.hitori.pw',
-	owner: 'lu bkn owner',
-	admin: 'lu bkn atmin',
-	botAdmin: 'gw bkn atmin bro',
+	owner: 'kamu bkn owner',
+	admin: 'kamu bkn atmin',
+	botAdmin: 'nomor ini bkn atmin',
 	group: 'cma buat grup aj',
 	private: 'cm di prvt cht',
 	prem: 'lu bkn user premium',
-	wait: 'bentar duluu',
-	error: 'eror bro!',
-	done: 'udh lunas yh'
+	wait: 'sbar bentar...',
+	error: 'error ×~×',
+	done: 'done bg'
 }
 global.APIs = {
 	hitori: 'https://my.hitori.pw/api',
